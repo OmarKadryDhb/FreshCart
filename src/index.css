@@ -11,3 +11,24 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.data-form {
+  width: 55%;
+}
+.prd-color{
+  color: #0AAD0A;
+}
+.main-bg-color{
+  background-color: #0AAD0A;
+
+}
+.prd-link , .prd-link:hover {
+  color: black !important;
+  text-decoration: none !important;
+}
+footer .get {
+  background-color: #F0F3F2;
+  
+}
+.order {
+  background-color: #F0F3F2;
+}
