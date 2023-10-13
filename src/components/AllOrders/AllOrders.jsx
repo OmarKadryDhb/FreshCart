@@ -35,12 +35,13 @@ export default function AllOrders() {
           </>
     }
   return <>
-  <div className="container mt-5 mb-5" style={ {height : "100vh"} }>
+  <div className="container mt-5 mb-5" style={ {minHeight : "100vh"} }>
     <div className="row gy-3">
         
         {userOrders.map(function(order,idx ){
-         return <>
-         
+         console.log(order);
+
+        return <>
          <div className="col-md-6">
           <div className="order p-3 rounded-1">
             <h2 className='text-center prd-color'>Order Details</h2>
@@ -62,8 +63,7 @@ export default function AllOrders() {
                 </div>
             </div>
           
-                <h5>Order sent to user with phone : {order.shippingAddress.phone} </h5>
-                <h5>at : {order.shippingAddress.details}</h5>
+                <h5>Order sent to user with phone : {order.user.phone} </h5>
                 <h5>Total Order Price : {order.totalOrderPrice} EGP</h5>
                 <h5>Payment Method : {order.paymentMethodType}</h5>
                 
